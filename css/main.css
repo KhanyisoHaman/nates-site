@@ -1,0 +1,303 @@
+/* Mixins -------------------- */
+/* Base Styles -------------------- */
+@import "https://fonts.googleapis.com/css?family=Noto+Sans+SC|Unlock";
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+hr {
+  box-shadow: 1px 1px 3px black;
+  width: 40%; }
+
+.head-top {
+  padding-top: 35vh; }
+
+h1,
+h2 {
+  font-family: 'Unlock', cursive;
+  text-align: center; }
+
+h2 {
+  background-color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 100%; }
+
+h3 {
+  font-size: 1.25em;
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; }
+
+p {
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 100%; }
+
+img {
+  border-radius: 10px;
+  text-align: center; }
+
+ul,
+ol {
+  margin: 30px 0; }
+
+li {
+  margin-bottom: 10px; }
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #ffa949;
+  text-decoration: none; }
+a:visited {
+  color: #add8e6; }
+a:hover {
+  color: rgba(255, 169, 73, 0.5); }
+
+.primary-content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "intro" "outro"; }
+
+.intro {
+  grid-area: intro;
+  width: 100%;
+  height: 130vh; }
+
+.outro {
+  grid-area: outro;
+  width: 100%;
+  height: 130vh; }
+
+.secondary-content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "resorts" "tips"; }
+
+.restorts {
+  grid-area: resorts;
+  width: 100%;
+  height: 130vh; }
+
+.tips {
+  grid-area: tips;
+  width: 100%;
+  height: 130vh; }
+
+.resort-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "hotel south rhodes"; }
+
+.hotel {
+  grid-area: hotel; }
+
+.south {
+  grid-area: south; }
+
+.rhodes {
+  grid-area: rhodes; }
+
+.grid-gif {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "packing sunscreen water dora"; }
+
+.packing {
+  grid-area: packing; }
+
+.sunscreen {
+  grid-area: sunscreen; }
+
+.water {
+  grid-area: water; }
+
+.dora {
+  grid-area: dora; }
+
+/* Web Fonts -------------------- */
+@font-face {
+  font-family: 'Unlock', cursive; }
+.main-heading {
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 2;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+  margin: 5px 0 0; }
+.main-title {
+  color: #fff;
+  font-size: 1.625rem;
+  letter-spacing: .065em;
+  font-weight: 200;
+  border-bottom: 2px solid;
+  padding-bottom: 10px; }
+
+.main-header {
+  background: linear-gradient(#ffa949a1, #ffa949c2), url(../images/Beautiful-jungle-hd-wallpaper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center; }
+
+.intro {
+  font-size: 1.25em;
+  padding-top: 15vh;
+  padding-bottom: 20vh;
+  line-height: 1.6;
+  color: #878787;
+  margin: 10px;
+  text-align: center;
+  width: auto;
+  height: auto; }
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center; }
+
+.Wildlife {
+  margin-left: 45%; }
+
+.arrow {
+  width: 50px;
+  margin-top: 150px; }
+
+.newlands {
+  width: 50%;
+  height: 70%;
+  margin: 10px; }
+
+.route-grid {
+  display: grid;
+  padding: 10px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "Contour-path Fernwood" "Kirstenbosch Woodcutter"; }
+
+.routes {
+  padding: 10px;
+  background-color: rgba(243, 234, 222, 0.815);
+  border-radius: 10px;
+  box-shadow: 5px 2px 9px rgba(0, 0, 0, 0.5098039216); }
+
+.routes img {
+  width: 250px;
+  height: 166px;
+  box-shadow: 1px 2px 3px black; }
+
+.Contour-path {
+  grid-area: Contour-path;
+  grid-column: span 4; }
+
+.Fernwood {
+  grid-area: Fernwood;
+  grid-column: span 4; }
+
+.Kirstenbosch {
+  grid-area: Kirstenbosch;
+  grid-column: span 4; }
+
+.Woodcutter {
+  grid-area: Woodcutter;
+  grid-column: span 4; }
+
+.lorem {
+  float: right;
+  width: 380px; }
+
+.resorts-rhodes {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.466); }
+
+.resorts-img {
+  width: 800px;
+  height: 400px;
+  text-align: center;
+  margin-left: 20%; }
+
+ul li {
+  list-style: none;
+  text-align: center; }
+
+.gif {
+  width: 250px;
+  height: 200px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.356); }
+
+/* Media Queries -------------------- */
+@media (max-width: 1024px) {
+  .primary-content,
+  .secondary-content {
+    width: 90%; }
+
+  .wildlife {
+    padding: 10% 12%;
+    margin: 50px 0 20px; } }
+@media (max-width: 794px) {
+  .primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border-top: none; }
+
+  img {
+    height: auto;
+    width: auto;
+    padding: 10%;
+    border-radius: 50%; }
+
+  p {
+    font-size: 1.3125em;
+    text-align: left;
+    text-transform: none; }
+
+  .main-header {
+    max-height: 380px;
+    padding: 50px 25px 0; }
+
+  .main-title {
+    font-size: 1.3rem;
+    border: none; }
+
+  .main-heading {
+    font-size: 5rem;
+    line-height: 1.1; }
+
+  .arrow {
+    display: none; }
+
+  .intro {
+    font-size: 1rem; }
+
+  .resorts,
+  .tips {
+    float: none;
+    width: 100%; }
+
+  .main-footer {
+    padding: 20px 0; } }
+
+/*# sourceMappingURL=main.css.map */

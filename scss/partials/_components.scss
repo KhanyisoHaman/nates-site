@@ -1,0 +1,166 @@
+/* Web Fonts -------------------- */
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans+SC|Unlock';
+
+@font-face {
+    font-family: 'Unlock',
+    cursive;
+}
+
+.main {
+    &-heading {
+        font-size: 4rem;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: normal;
+        line-height: 2;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+        margin: 5px 0 0;
+        
+
+        // @include center
+    }
+
+    &-title {
+        color: $color-text-light;
+        font-size: 1.625rem;
+        letter-spacing: .065em;
+        font-weight: 200;
+        border-bottom: 2px solid;
+        padding-bottom: 10px;
+    
+    }
+}
+
+.main-header {
+    background: linear-gradient(#ffa949a1, #ffa949c2), url(../images/Beautiful-jungle-hd-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+.intro {
+    font-size: 1.25em;
+    padding-top: 15vh;
+    padding-bottom: 20vh; 
+    line-height: 1.6;
+    // color: initial;
+    color: $color-text-base;
+    margin: 10px;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+// Callout link/button
+
+.callout {
+    font-size: 1.25em;
+    border-bottom: 3px solid;
+    padding: 0 9px 3px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.Wildlife {
+    margin-left: 45%;
+}
+
+// Arrow image icon
+
+.arrow {
+    width: 50px;
+    margin-top: 150px;
+}
+
+// Newlands image
+
+.newlands {
+    width: 50%;
+    height: 70%;
+    margin: 10px;
+}
+
+// Routes
+
+.route-grid {
+    display: grid;
+    padding: 10px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+        "Contour-path Fernwood"
+        "Kirstenbosch Woodcutter"
+    
+}
+
+.routes {
+    padding: 10px;
+    background-color: rgba(243, 234, 222, 0.815);
+    border-radius: 10px;
+    box-shadow: 5px 2px 9px rgba(0, 0, 0, 0.5098039215686274);
+}
+
+.routes img {
+    width: 250px;
+    height: 166px;
+    box-shadow: 1px 2px 3px black;
+}
+
+.Contour-path {
+    grid-area: Contour-path;
+    grid-column: span 4;
+}
+
+.Fernwood {
+    grid-area: Fernwood;
+    grid-column: span 4;
+}
+
+.Kirstenbosch {
+    grid-area: Kirstenbosch;
+    grid-column: span 4;
+}
+
+.Woodcutter {
+    grid-area: Woodcutter;
+    grid-column: span 4;
+}
+
+
+.lorem {
+    float: right;
+    width: 380px;
+}
+
+// Secondary Content
+
+
+.resorts-rhodes {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.466);
+}
+.resorts-img {
+    width: 800px;
+    height: 400px;
+    text-align: center;
+    margin-left: 20%;
+}
+
+ul li {
+    list-style: none;
+    text-align: center;
+}
+
+// Tips
+
+.gif {
+    width: 250px;
+    height: 200px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.356);
+}

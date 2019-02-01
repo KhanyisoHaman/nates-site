@@ -1,0 +1,97 @@
+// Layout of the website
+
+// Laoyout of the primary content
+.primary-content {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "intro"
+        "outro"
+}
+
+.intro {
+    grid-area: intro;
+    @include grid;
+}
+
+.outro {
+    grid-area: outro;
+    @include grid;
+}
+
+// Layout of the secondary content
+
+.secondary-content {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "resorts"
+        "tips"
+}
+
+.restorts {
+    grid-area: resorts;
+    @include grid;
+}
+
+.tips {
+    grid-area: tips;
+    @include grid;
+}
+
+
+// resort-grid
+
+.resort-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,auto);
+    grid-template-areas: 
+        "hotel south rhodes"
+}
+
+.hotel {
+    grid-area: hotel;
+
+}
+
+.south {
+    grid-area: south;
+}
+
+.rhodes {
+    grid-area: rhodes;
+}
+
+
+// Tips
+
+.grid-gif {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+    grid-template-areas: 
+        "packing sunscreen water dora"
+}
+
+.packing {
+    grid-area: packing;
+}
+
+.sunscreen {
+    grid-area: sunscreen;
+}
+
+.water {
+    grid-area: water;
+}
+
+.dora {
+    grid-area: dora;
+}
